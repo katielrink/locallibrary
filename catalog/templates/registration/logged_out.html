@@ -1,0 +1,5 @@
+<!-- Extends format of base class -->
+{% extends "base_generic.html" %} {% block content %}
+<!-- Show mininimally logged out and allow for login -->
+<p>Logged out!</p>
+<a href="{% url 'login'%}">Click here to login again.</a> {% endblock %}

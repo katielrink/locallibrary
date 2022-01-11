@@ -1,0 +1,13 @@
+<!-- Extends format of base class -->
+{% extends "base_generic.html" %} {% block content %}
+
+<!-- Input a book into the database -->
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit" />
+
+</form>
+{% endblock %}
